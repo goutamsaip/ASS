@@ -16,6 +16,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".BeginnerTutorialActivity"
+            android:label="@string/beginnertut_activity_name"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".IntermediateTutorialActivity"
+            android:label="@string/intermediatetut_activity_name"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdvancedTutorialActivity"
+            android:label="Advanced tutorial"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EasyQuizActivity"
+            android:label="Easy quiz"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MediumQuizActivity"
+            android:label="Medium quiz"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HardQuizActivity"
+            android:label="Hard quiz"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ArticlesActivity"
+            android:label="Articles"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FaqActivity"
+            android:label="F.A.Q"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

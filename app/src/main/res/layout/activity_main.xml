@@ -65,6 +65,7 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <LinearLayout
+                    android:id="@+id/beginnertutoriallayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -88,6 +89,7 @@
                         android:textStyle="bold" />
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/intermediatetutoriallayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -111,6 +113,7 @@
                         android:textStyle="bold" />
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/advancedtutoriallayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -177,88 +180,7 @@
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
 
-            </LinearLayout>
-
-
-
-            <LinearLayout
-                android:id="@+id/articlesoptionslayout"
-                android:visibility="gone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-                android:orientation="vertical"
-                android:gravity="center">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_import_contacts_black_24dp"/>
-                    <View
-                        android:layout_height="match_parent"
-                        android:layout_width="1dp"
-                        android:background="@color/lightgray"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Beginner"
-                        android:textStyle="bold" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_import_contacts_black_24dp"/>
-                    <View
-                        android:layout_height="match_parent"
-                        android:layout_width="1dp"
-                        android:background="@color/lightgray"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Intermediate"
-                        android:textStyle="bold" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_import_contacts_black_24dp"/>
-                    <View
-                        android:layout_height="match_parent"
-                        android:layout_width="1dp"
-                        android:background="@color/lightgray"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Advanced"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </LinearLayout>
+            </LinearLayout>d
         </android.support.v7.widget.CardView>
 
 
@@ -308,86 +230,6 @@
                     android:text="description"
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
-            </LinearLayout>
-
-
-
-            <LinearLayout
-                android:id="@+id/faqoptionslayout"
-                android:visibility="gone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_search_black_24dp"/>
-                    <View
-                        android:layout_height="match_parent"
-                        android:layout_width="1dp"
-                        android:background="@color/lightgray"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Beginner"
-                        android:textStyle="bold" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_search_black_24dp"/>
-                    <View
-                        android:layout_height="match_parent"
-                        android:layout_width="1dp"
-                        android:background="@color/lightgray"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Intermediate"
-                        android:textStyle="bold" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_search_black_24dp"/>
-                    <View
-                        android:layout_height="match_parent"
-                        android:layout_width="1dp"
-                        android:background="@color/lightgray"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Advanced"
-                        android:textStyle="bold" />
-                </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -448,6 +290,7 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <LinearLayout
+                    android:id="@+id/easyquizlayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -467,10 +310,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Beginner"
+                        android:text="Easy"
                         android:textStyle="bold" />
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/mediumquizlayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -490,10 +334,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Intermediate"
+                        android:text="Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/hardquizlayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -513,7 +358,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Advanced"
+                        android:text="Hard"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>

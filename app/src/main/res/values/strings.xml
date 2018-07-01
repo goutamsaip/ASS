@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ASS</string>
+    <string name="beginnertut_activity_name">Beginner tutorial</string>
+    <string name="intermediatetut_activity_name">Intermediate tutorial</string>
 </resources>

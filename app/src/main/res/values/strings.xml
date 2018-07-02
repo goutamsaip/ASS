@@ -2,4 +2,15 @@
     <string name="app_name">ASS</string>
     <string name="beginnertut_activity_name">Beginner tutorial</string>
     <string name="intermediatetut_activity_name">Intermediate tutorial</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="description">description</string>
+    <string name="articles">Articles</string>
+    <string name="faq">F.A.Q</string>
+    <string name="quiz">Quiz</string>
+    <string name="beginner">Beginner</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="advanced">Advanced</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
 </resources>

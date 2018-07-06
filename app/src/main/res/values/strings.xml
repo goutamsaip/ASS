@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ASS</string>
+    <string name="app_name">ASLA</string>
     <string name="beginnertut_activity_name">Beginner tutorial</string>
     <string name="intermediatetut_activity_name">Intermediate tutorial</string>
     <string name="tutorial">Tutorial</string>
@@ -13,4 +13,6 @@
     <string name="easy">Easy</string>
     <string name="medium">Medium</string>
     <string name="hard">Hard</string>
+    <string name="general">General</string>
+    <string name="specific">Project Specific</string>
 </resources>

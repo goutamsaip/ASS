@@ -8,6 +8,6 @@ public class HardQuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hard_quiz);
+        setContentView(R.layout.activity_quiz);
     }
 }

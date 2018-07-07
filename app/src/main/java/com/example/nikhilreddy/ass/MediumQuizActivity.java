@@ -8,6 +8,6 @@ public class MediumQuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_medium_quiz);
+        setContentView(R.layout.activity_quiz);
     }
 }

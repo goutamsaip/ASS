@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,12 +43,16 @@
             android:label="Hard quiz"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ArticlesActivity"
-            android:label="Articles"
-            android:parentActivityName=".MainActivity" />
-        <activity
             android:name=".FaqActivity"
             android:label="F.A.Q"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".GeneralArticlesActivity"
+            android:label="General articles"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SpecificArticlesActivity"
+            android:label="Product specific articles"
             android:parentActivityName=".MainActivity" />
     </application>
 

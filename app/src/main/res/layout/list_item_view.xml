@@ -8,12 +8,14 @@
 
     <TextView
         android:id="@+id/number_text"
-        android:layout_width="70dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         tools:text="1"
         android:textSize="20sp"
         android:gravity="center"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/number_circle"/>
 
     <TextView
         android:id="@+id/chapter_text"
@@ -22,6 +24,8 @@
         tools:text="Chapter 1"
         android:layout_weight="4"
         android:textSize="20sp"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"/>
 
 </LinearLayout>

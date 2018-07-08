@@ -19,11 +19,12 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager mPager;
     private int currentPage = 0;
-    private final Integer[] XMEN= {R.drawable.programmers_fact,R.drawable.formats,R.drawable.icon,R.drawable.ico,R.drawable.hbo};
+    private final Integer[] XMEN= {R.drawable.autosar,R.drawable.programmers_fact,R.drawable.formats,R.drawable.zf};
     private ArrayList<Integer> XMENArray = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

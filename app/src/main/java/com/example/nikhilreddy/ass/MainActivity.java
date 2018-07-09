@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
         final LinearLayout advancedtutoriallayout = (LinearLayout) findViewById(R.id.advancedtutoriallayout);
         final CardView articlescard = (CardView) findViewById(R.id.articlescard);
         final LinearLayout articleslayout = (LinearLayout) findViewById(R.id.articleslayout);
+        final LinearLayout articlesoptionslayout = (LinearLayout) findViewById(R.id.articlesoptionslayout);
+        final LinearLayout generalarticleslayout = (LinearLayout) findViewById(R.id.generalarticleslayout);
+        final LinearLayout specificarticleslayout = (LinearLayout) findViewById(R.id.specificarticleslayout);
         final CardView faqcard = (CardView) findViewById(R.id.faqcard);
         final LinearLayout faqlayout = (LinearLayout) findViewById(R.id.faqlayout);
         final CardView quizcard = (CardView) findViewById(R.id.quizcard);
@@ -51,7 +54,9 @@ public class MainActivity extends AppCompatActivity {
         final Intent easyquiz_intent = new Intent(this, EasyQuizActivity.class);
         final Intent mediumquiz_intent = new Intent(this, MediumQuizActivity.class);
         final Intent hardquiz_intent = new Intent(this, HardQuizActivity.class);
-        final Intent articles_intent = new Intent(this, ArticlesActivity.class);
+        final Intent general_articles_intent = new Intent(this, GeneralArticlesActivity.class);
+        final Intent specific_articles_intent = new Intent(this, SpecificArticlesActivity.class);
+
         final Intent faq_intent = new Intent(this, FaqActivity.class);
 
         init();
@@ -61,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
                 if(tutoriallayout.getVisibility() == View.VISIBLE) {
                     tutoriallayout.setVisibility(View.GONE);
                     tutorialoptionslayout.setVisibility(View.VISIBLE);
+                    articleslayout.setVisibility(View.VISIBLE);
+                    articlesoptionslayout.setVisibility(View.GONE);
                     quizlayout.setVisibility(View.VISIBLE);
                     quizoptionslayout.setVisibility(View.GONE);
                 } else {
@@ -71,10 +78,17 @@ public class MainActivity extends AppCompatActivity {
         });
         articlescard.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                tutoriallayout.setVisibility(View.VISIBLE);
-                tutorialoptionslayout.setVisibility(View.GONE);
-                quizlayout.setVisibility(View.VISIBLE);
-                quizoptionslayout.setVisibility(View.GONE);
+                if(articleslayout.getVisibility() == View.VISIBLE) {
+                    tutoriallayout.setVisibility(View.VISIBLE);
+                    tutorialoptionslayout.setVisibility(View.GONE);
+                    articleslayout.setVisibility(View.GONE);
+                    articlesoptionslayout.setVisibility(View.VISIBLE);
+                    quizlayout.setVisibility(View.VISIBLE);
+                    quizoptionslayout.setVisibility(View.GONE);
+                } else {
+                    articleslayout.setVisibility(View.VISIBLE);
+                    articlesoptionslayout.setVisibility(View.GONE);
+                }
 
             }
         });
@@ -82,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 tutoriallayout.setVisibility(View.VISIBLE);
                 tutorialoptionslayout.setVisibility(View.GONE);
+                articleslayout.setVisibility(View.VISIBLE);
+                articlesoptionslayout.setVisibility(View.GONE);
                 quizlayout.setVisibility(View.VISIBLE);
                 quizoptionslayout.setVisibility(View.GONE);
 
@@ -92,6 +108,8 @@ public class MainActivity extends AppCompatActivity {
                 if(quizlayout.getVisibility() == View.VISIBLE) {
                     tutoriallayout.setVisibility(View.VISIBLE);
                     tutorialoptionslayout.setVisibility(View.GONE);
+                    articleslayout.setVisibility(View.VISIBLE);
+                    articlesoptionslayout.setVisibility(View.GONE);
                     quizlayout.setVisibility(View.GONE);
                     quizoptionslayout.setVisibility(View.VISIBLE);
                 } else {
@@ -130,9 +148,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(hardquiz_intent);
             }
         });
-        articleslayout.setOnClickListener(new View.OnClickListener() {
+        generalarticleslayout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                startActivity(articles_intent);
+                startActivity(general_articles_intent);
+            }
+        });
+        specificarticleslayout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                startActivity(specific_articles_intent);
             }
         });
         faqlayout.setOnClickListener(new View.OnClickListener() {

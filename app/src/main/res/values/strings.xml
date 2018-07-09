@@ -10,9 +10,9 @@
     <string name="beginner">Beginner</string>
     <string name="intermediate">Intermediate</string>
     <string name="advanced">Advanced</string>
+    <string name="general">General</string>
+    <string name="specific">Product specific</string>
     <string name="easy">Easy</string>
     <string name="medium">Medium</string>
     <string name="hard">Hard</string>
-    <string name="general">General</string>
-    <string name="specific">Project Specific</string>
 </resources>

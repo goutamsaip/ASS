@@ -6,6 +6,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -56,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
         final Intent hardquiz_intent = new Intent(this, HardQuizActivity.class);
         final Intent general_articles_intent = new Intent(this, GeneralArticlesActivity.class);
         final Intent specific_articles_intent = new Intent(this, SpecificArticlesActivity.class);
-
         final Intent faq_intent = new Intent(this, FaqActivity.class);
 
         init();
@@ -163,6 +164,30 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(faq_intent);
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the main_menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_options, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch(item.getItemId()) {
+            case R.id.contact_us:
+                //your action
+                break;
+            case R.id.help:
+                //your action
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+        return true;
     }
 
     private void init() {

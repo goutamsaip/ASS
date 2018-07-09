@@ -261,7 +261,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:contentDescription="@string/general"
-                                android:src="@drawable/ic_ondemand_video_black_24dp" />
+                                android:src="@drawable/ic_import_contacts_black_24dp" />
 
                             <View
                                 android:layout_width="1dp"
@@ -291,7 +291,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:contentDescription="@string/specific"
-                                android:src="@drawable/ic_ondemand_video_black_24dp" />
+                                android:src="@drawable/ic_import_contacts_black_24dp" />
 
                             <View
                                 android:layout_width="1dp"

@@ -29,7 +29,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AdvancedTutorialActivity"
-            android:label="Advanced tutorial"
+            android:label="@string/advancedtut_activity_name"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".EasyQuizActivity"

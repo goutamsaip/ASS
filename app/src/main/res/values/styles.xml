@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- This style is used for displaying Splash screen while MainActivity is loading -->
     <style name="splashScreenTheme" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
         <item name="android:windowBackground">@drawable/launcher_icon</item>
     </style>

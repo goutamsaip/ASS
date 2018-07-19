@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nikhilreddy.ass">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,6 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-
             android:screenOrientation="portrait"
             android:theme="@style/splashScreenTheme">
             <intent-filter>
@@ -21,27 +22,27 @@
         </activity>
         <activity
             android:name=".BeginnerTutorialActivity"
-            android:label="@string/beginnertut_activity_name"
+            android:label="@string/beginner"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".IntermediateTutorialActivity"
-            android:label="@string/intermediatetut_activity_name"
+            android:label="@string/intermediate"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AdvancedTutorialActivity"
-            android:label="@string/advancedtut_activity_name"
+            android:label="@string/advanced"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".EasyQuizActivity"
-            android:label="Easy quiz"
+            android:label="Easy"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MediumQuizActivity"
-            android:label="Medium quiz"
+            android:label="Medium"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".HardQuizActivity"
-            android:label="Hard quiz"
+            android:label="Hard"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".FaqActivity"
@@ -49,12 +50,15 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".GeneralArticlesActivity"
-            android:label="General articles"
+            android:label="General"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SpecificArticlesActivity"
-            android:label="Project specific articles"
+            android:label="Project Specific"
             android:parentActivityName=".MainActivity" />
+        <activity android:name=".ContactActivity"
+            android:label="Contact"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

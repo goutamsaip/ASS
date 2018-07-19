@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class SpecificArticlesActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
@@ -13,6 +16,23 @@ public class SpecificArticlesActivity extends AppCompatActivity implements Searc
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_articles);
+
+        final ArrayList<Item> specificList = new ArrayList<>();
+
+        specificList.add(new Item("1","Article   1"));
+        specificList.add(new Item("2","Article   2"));
+        specificList.add(new Item("3","Article   3"));
+        specificList.add(new Item("4","Article   4"));
+        specificList.add(new Item("5","Article   5"));
+        specificList.add(new Item("6","Article   6"));
+        specificList.add(new Item("7","Article   7"));
+        specificList.add(new Item("8","Article   8"));
+        specificList.add(new Item("9","Article   9"));
+        specificList.add(new Item("10","Article   10"));
+
+        ListView listView = (ListView) findViewById(R.id.articles_list_view);
+        ChapterAdapter chapterAdapter = new ChapterAdapter(SpecificArticlesActivity.this,specificList,R.color.white);
+        listView.setAdapter(chapterAdapter);
     }
 
     @Override

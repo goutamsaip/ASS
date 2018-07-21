@@ -6,33 +6,79 @@ import android.os.Bundle;
 import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ListView;
+
+import android.view.View;
+import android.widget.ExpandableListAdapter;
+import android.widget.ExpandableListView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 
 public class BeginnerTutorialActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
+
+    ExpandableListView expandableListView;
+    ExpandableListAdapter expandableListAdapter;
+    List<String> expandableListTitle;
+    HashMap<String, List<String>> expandableListDetail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial);
 
-        final ArrayList<Item> beginnerList = new ArrayList<>();
+        expandableListView = (ExpandableListView) findViewById(R.id.expandableListView);
+        expandableListDetail = new HashMap<String, List<String>>();
 
-        beginnerList.add(new Item("1","Chapter 1"));
-        beginnerList.add(new Item("2","Chapter 2"));
-        beginnerList.add(new Item("3","Chapter 3"));
-        beginnerList.add(new Item("4","Chapter 4"));
-        beginnerList.add(new Item("5","Chapter 5"));
-        beginnerList.add(new Item("6","Chapter 6"));
-        beginnerList.add(new Item("7","Chapter 7"));
-        beginnerList.add(new Item("8","Chapter 8"));
-        beginnerList.add(new Item("9","Chapter 9"));
-        beginnerList.add(new Item("10","Chapter 10"));
+        List<String> chap1 = new ArrayList<String>();
+        chap1.add("Topic 1");
+        chap1.add("Topic 2");
+        chap1.add("Topic 3");
+        chap1.add("Topic 4");
+        chap1.add("Topic 5");
 
-        ListView listView = (ListView) findViewById(R.id.list_view);
-        ChapterAdapter chapterAdapter = new ChapterAdapter(BeginnerTutorialActivity.this,beginnerList, R.color.white);
-        listView.setAdapter(chapterAdapter);
+        List<String> chap2 = new ArrayList<String>();
+        chap2.add("Brazil");
+        chap2.add("Spain");
+        chap2.add("Germany");
+        chap2.add("Netherlands");
+        chap2.add("Italy");
+
+        List<String> chap3 = new ArrayList<String>();
+        chap3.add("United States");
+        chap3.add("Spain");
+        chap3.add("Argentina");
+        chap3.add("France");
+        chap3.add("Russia");
+
+        expandableListDetail.put("Chapter 1", chap1);
+        expandableListDetail.put("Chapter 2", chap2);
+        expandableListDetail.put("Chapter 3", chap3);
+
+        expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());
+        expandableListAdapter = new CustomExpandableListAdapter(this, expandableListTitle, expandableListDetail);
+        expandableListView.setAdapter(expandableListAdapter);
+        expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            @Override
+            public void onGroupExpand(int groupPosition) {
+            }
+        });
+
+        expandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
+
+            @Override
+            public void onGroupCollapse(int groupPosition) {
+            }
+        });
+
+        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v,
+                                        int groupPosition, int childPosition, long id) {
+                return false;
+            }
+        });
     }
 
     @Override

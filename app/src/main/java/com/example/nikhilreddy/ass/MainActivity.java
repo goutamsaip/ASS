@@ -178,6 +178,8 @@ public class MainActivity extends AppCompatActivity {
         switch(item.getItemId()) {
             case R.id.contact_us:
                 //your action
+                Intent contactIntent = new Intent(MainActivity.this,ContactActivity.class);
+                startActivity(contactIntent);
                 break;
             case R.id.help:
                 //your action

@@ -8,9 +8,4 @@
 
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar" />
 
-    <!-- This style is used for displaying Splash screen while MainActivity is loading -->
-    <style name="splashScreenTheme" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
-        <item name="android:windowBackground">@drawable/launcher_icon</item>
-    </style>
-
 </resources>

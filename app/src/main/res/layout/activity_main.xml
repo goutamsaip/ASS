@@ -6,19 +6,20 @@
     android:orientation="vertical"
     tools:context="com.example.nikhilreddy.ass.MainActivity">
 
-
-
+    <!-- This is used for the scroll in the MainActivity-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="none">
 
+        <!-- This is used for combining the children elements in the ScrollView-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center_horizontal">
 
+            <!-- This is used for the Slider in the MainActivity-->
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -26,11 +27,13 @@
                 android:paddingRight="10dp"
                 android:paddingTop="10dp">
 
+                <!-- This is used for the images in Slider in the MainActivity-->
                 <android.support.v4.view.ViewPager
                     android:id="@+id/pager"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
 
+                <!-- This is used for the circles in Slider in the MainActivity-->
                 <me.relex.circleindicator.CircleIndicator
                     android:id="@+id/indicator"
                     android:layout_width="match_parent"
@@ -38,12 +41,14 @@
                     android:layout_gravity="center|bottom"  />
             </FrameLayout>
 
+            <!-- Tutorials and Articles card-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_horizontal">
 
+                <!-- Tutorials card-->
                 <android.support.v7.widget.CardView
                     android:id="@+id/tutorialcard"
                     android:layout_width="160dp"
@@ -193,7 +198,7 @@
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
-
+                <!--Articles card-->
                 <android.support.v7.widget.CardView
                     android:id="@+id/articlescard"
                     android:layout_width="160dp"
@@ -312,15 +317,16 @@
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
-
             </LinearLayout>
 
+            <!-- FAQ and Quiz card-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_horizontal">
 
+                <!-- FAQ card-->
                 <android.support.v7.widget.CardView
                     android:id="@+id/faqcard"
                     android:layout_width="160dp"
@@ -370,7 +376,7 @@
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
-
+                <!-- Quiz card-->
                 <android.support.v7.widget.CardView
                     android:id="@+id/quizcard"
                     android:layout_width="160dp"

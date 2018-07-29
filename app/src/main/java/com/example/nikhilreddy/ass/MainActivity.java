@@ -10,7 +10,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -184,6 +183,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.help:
                 //your action
+                Globals.saveFirstTimeLaunch(true);
+                Intent whyAutosarIntent = new Intent(MainActivity.this,WelcomeActivity.class);
+                startActivity(whyAutosarIntent);
                 break;
             default:
                 return super.onOptionsItemSelected(item);

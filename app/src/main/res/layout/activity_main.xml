@@ -10,7 +10,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:scrollbars="none">
 
         <!-- This is used for combining the children elements in the ScrollView-->
         <LinearLayout
@@ -22,7 +22,10 @@
             <!-- This is used for the Slider in the MainActivity-->
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp">
+                android:layout_height="200dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
 
                 <!-- This is used for the images in Slider in the MainActivity-->
                 <android.support.v4.view.ViewPager

@@ -56,7 +56,8 @@
             android:name=".SpecificArticlesActivity"
             android:label="Project Specific"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".ContactActivity"
+        <activity
+            android:name=".ContactActivity"
             android:label="Contact"
             android:parentActivityName=".MainActivity"/>
     </application>

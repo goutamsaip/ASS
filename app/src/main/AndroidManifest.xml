@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nikhilreddy.ass">
 
+    <!-- Permission for using caller or phone -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -12,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".WelcomeActivity"
+        <!-- The splash screen of the app -->
+        <activity
+            android:name=".WelcomeActivity"
             android:theme="@style/IntroTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,12 +23,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- The home page of the app -->
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
             android:label="ASLA"
-            android:theme="@style/AppTheme">
-        </activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!-- Parts of Tutorials -->
         <activity
             android:name=".BeginnerTutorialActivity"
             android:label="@string/beginner"
@@ -38,6 +44,8 @@
             android:name=".AdvancedTutorialActivity"
             android:label="@string/advanced"
             android:parentActivityName=".MainActivity" />
+
+        <!-- Parts of Quiz -->
         <activity
             android:name=".EasyQuizActivity"
             android:label="Easy"
@@ -50,21 +58,31 @@
             android:name=".HardQuizActivity"
             android:label="Hard"
             android:parentActivityName=".MainActivity" />
+
+        <!-- FAQ activity -->
         <activity
             android:name=".FaqActivity"
             android:label="F.A.Q"
             android:parentActivityName=".MainActivity" />
+
+        <!-- Articles activity -->
         <activity
-            android:name=".GeneralArticlesActivity"
-            android:label="General"
+            android:name=".ArticlesActivity"
+            android:label="Links &amp; Info"
             android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".SpecificArticlesActivity"
-            android:label="Project Specific"
-            android:parentActivityName=".MainActivity" />
+
+        <!-- For showing contact us information -->
         <activity
             android:name=".ContactActivity"
             android:label="Contact"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ZFActivity"
+            android:label="Why ZF"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".AutosarActivity"
+            android:label="Why AUTOSAR"
             android:parentActivityName=".MainActivity"/>
     </application>
 

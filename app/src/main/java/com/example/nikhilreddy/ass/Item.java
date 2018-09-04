@@ -2,10 +2,10 @@ package com.example.nikhilreddy.ass;
 
 public class Item {
 
-    private String number;
+    private int number;
     private String chapter;
 
-    public Item(String number, String chapter){
+    public Item(int number, String chapter){
         this.number = number;
         this.chapter = chapter;
     }
@@ -14,7 +14,7 @@ public class Item {
         return chapter;
     }
 
-    public String getNumber() {
+    public int getNumber() {
         return number;
     }
 }

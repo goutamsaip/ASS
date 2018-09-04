@@ -10,9 +10,8 @@
         android:id="@+id/expandableListView"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layoutDirection="rtl"
+        android:layoutDirection="ltr"
         android:divider="@android:color/darker_gray"
-        android:dividerHeight="0.5dp"
-         />
+        android:dividerHeight="0.5dp" />
 
 </RelativeLayout>

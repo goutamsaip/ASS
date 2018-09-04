@@ -8,5 +8,5 @@
     android:orientation="vertical"
     android:drawSelectorOnTop="true"
     android:id="@+id/articles_list_view"
-    tools:context="com.example.nikhilreddy.ass.GeneralArticlesActivity">
+    tools:context="com.example.nikhilreddy.ass.ArticlesActivity">
 </ListView>

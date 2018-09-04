@@ -96,8 +96,6 @@
                             android:text="@string/description"
                             android:textColor="@android:color/darker_gray" />
                     </LinearLayout>
-
-
                     <LinearLayout
                         android:id="@+id/tutorialoptionslayout"
                         android:layout_width="match_parent"
@@ -229,7 +227,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="@string/articles"
+                            android:text="Links &amp; Info"
                             android:textStyle="bold" />
 
                         <View
@@ -245,75 +243,6 @@
                             android:padding="5dp"
                             android:text="@string/description"
                             android:textColor="@android:color/darker_gray" />
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/articlesoptionslayout"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:visibility="gone">
-
-                        <LinearLayout
-                            android:id="@+id/generalarticleslayout"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:orientation="horizontal"
-                            android:padding="10dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:contentDescription="@string/general"
-                                android:src="@drawable/ic_import_contacts_black_24dp" />
-
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@color/lightgray" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/general"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/specificarticleslayout"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:orientation="horizontal"
-                            android:padding="10dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/specific"
-                                android:src="@drawable/ic_import_contacts_black_24dp" />
-
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@color/lightgray" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/specific"
-                                android:textStyle="bold" />
-                        </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 

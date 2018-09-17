@@ -10,6 +10,9 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+/**
+ * It is used for FAQ activity
+ */
 public class FaqActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
     @Override

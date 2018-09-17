@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- The splash screen of the app -->
+        <!-- The Intro screen of the app -->
         <activity
             android:name=".WelcomeActivity"
             android:theme="@style/IntroTheme">
@@ -76,10 +76,14 @@
             android:name=".ContactActivity"
             android:label="Contact"
             android:parentActivityName=".MainActivity" />
+
+        <!-- For showing why ZF -->
         <activity
             android:name=".ZFActivity"
             android:label="Why ZF"
             android:parentActivityName=".MainActivity"/>
+
+        <!-- For showing why AUTOSAR -->
         <activity
             android:name=".AutosarActivity"
             android:label="Why AUTOSAR"

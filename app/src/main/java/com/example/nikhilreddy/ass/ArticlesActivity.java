@@ -15,6 +15,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+/**
+ * it is used for arcticles
+ */
 public class ArticlesActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
     @Override
@@ -71,6 +74,10 @@ public class ArticlesActivity extends AppCompatActivity implements SearchView.On
         return false;
     }
 
+    /**
+     * it is used for opening the web page in the articles
+     * @param url
+     */
     public void openWebPage(String url) {
         Uri webpage = Uri.parse(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, webpage);

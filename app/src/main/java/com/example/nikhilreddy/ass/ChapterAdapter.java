@@ -14,6 +14,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+/**
+ * it is used to get the data for each item in the listview
+ */
 public class ChapterAdapter extends ArrayAdapter<Item>{
 
     private int colorId;

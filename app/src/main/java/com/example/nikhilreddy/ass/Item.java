@@ -1,5 +1,8 @@
 package com.example.nikhilreddy.ass;
 
+/**
+ * this is used for getting data in each list item
+ */
 public class Item {
 
     private int number;

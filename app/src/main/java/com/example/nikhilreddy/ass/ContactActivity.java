@@ -17,4 +17,10 @@ public class ContactActivity extends AppCompatActivity {
         setContentView(R.layout.activity_contact);
     }
 
+    public void dial(View v) {
+        String phone = v.getTag().toString();
+        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null));
+        startActivity(intent);
+    }
+
 }

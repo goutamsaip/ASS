@@ -17,11 +17,6 @@
         <activity
             android:name=".WelcomeActivity"
             android:theme="@style/IntroTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <!-- The home page of the app -->
@@ -34,15 +29,7 @@
         <!-- Parts of Tutorials -->
         <activity
             android:name=".BeginnerTutorialActivity"
-            android:label="@string/beginner"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".IntermediateTutorialActivity"
-            android:label="@string/intermediate"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".AdvancedTutorialActivity"
-            android:label="@string/advanced"
+            android:label="Tutorial"
             android:parentActivityName=".MainActivity" />
 
         <!-- Parts of Quiz -->
@@ -79,11 +66,18 @@
         <activity
             android:name=".ZFActivity"
             android:label="Why ZF"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AutosarActivity"
             android:label="Why AUTOSAR"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Splash"
+            android:theme="@style/splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

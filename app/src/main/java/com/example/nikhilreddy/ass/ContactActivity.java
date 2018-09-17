@@ -17,15 +17,4 @@ public class ContactActivity extends AppCompatActivity {
         setContentView(R.layout.activity_contact);
     }
 
-    public void callContact(View view){
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:8008949939"));
-
-        if (ActivityCompat.checkSelfPermission(ContactActivity.this,
-                Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            return;
-        }
-        startActivity(callIntent);
-    }
-
 }

@@ -1,5 +1,6 @@
 package com.example.nikhilreddy.ass;
 
+import android.content.Intent;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,8 +12,10 @@ import android.view.View;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 
+import java.nio.BufferUnderflowException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 
@@ -29,32 +32,37 @@ public class BeginnerTutorialActivity extends AppCompatActivity implements Searc
         setContentView(R.layout.activity_tutorial);
 
         expandableListView = (ExpandableListView) findViewById(R.id.expandableListView);
-        expandableListDetail = new HashMap<String, List<String>>();
+        expandableListDetail = new LinkedHashMap<String, List<String>>();
 
         List<String> chap1 = new ArrayList<String>();
-        chap1.add("Topic 1");
-        chap1.add("Topic 2");
-        chap1.add("Topic 3");
-        chap1.add("Topic 4");
-        chap1.add("Topic 5");
+        chap1.add("1.1 What is Autosar?");
+        chap1.add("1.2 Basic AUTOSAR Approach");
+        chap1.add("1.3 Autosar Architecture");
+        chap1.add("1.4 Microcontroller Abstraction Layer");
+        chap1.add("1.5 ECU Abstraction Layer");
+        chap1.add("1.6 Complex Driver");
+        chap1.add("1.7 Services Layer");
+        chap1.add("1.8 Run Time Environment (RTE)");
+        chap1.add("1.9 Autosar Methodology");
+        chap1.add("1.10 System and ECU");
 
         List<String> chap2 = new ArrayList<String>();
-        chap2.add("Brazil");
-        chap2.add("Spain");
-        chap2.add("Germany");
-        chap2.add("Netherlands");
-        chap2.add("Italy");
+        chap2.add("2.1 Why is the focus on Automotives?");
 
         List<String> chap3 = new ArrayList<String>();
-        chap3.add("United States");
-        chap3.add("Spain");
-        chap3.add("Argentina");
-        chap3.add("France");
-        chap3.add("Russia");
+        chap3.add("3.1 Standards before Autosar");
 
-        expandableListDetail.put("Chapter 1", chap1);
-        expandableListDetail.put("Chapter 2", chap2);
-        expandableListDetail.put("Chapter 3", chap3);
+        List<String> chap4 = new ArrayList<String>();
+        chap3.add("4.1 ");
+
+        List<String> chap5 = new ArrayList<String>();
+        chap3.add("5.1 ");
+
+        expandableListDetail.put("1. What is Autosar?", chap1);
+        expandableListDetail.put("2. Why is the focus on Automotives?", chap2);
+        expandableListDetail.put("3. Standards before Autosar", chap3);
+        expandableListDetail.put("4. ", chap4);
+        expandableListDetail.put("5. ", chap5);
 
         expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());
         expandableListAdapter = new CustomExpandableListAdapter(this, expandableListTitle, expandableListDetail);
@@ -76,7 +84,11 @@ public class BeginnerTutorialActivity extends AppCompatActivity implements Searc
             @Override
             public boolean onChildClick(ExpandableListView parent, View v,
                                         int groupPosition, int childPosition, long id) {
-                return false;
+                final Intent disp_content = new Intent(BeginnerTutorialActivity.this, displayContent.class);
+                disp_content.putExtra("chapter",groupPosition);
+                disp_content.putExtra("topic",childPosition);
+                startActivity(disp_content);
+                return true;
             }
         });
     }

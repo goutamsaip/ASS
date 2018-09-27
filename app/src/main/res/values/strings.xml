@@ -8,7 +8,7 @@
     <string name="beginner">Beginner</string>
     <string name="intermediate">Intermediate</string>
     <string name="advanced">Advanced</string>
-    <string name="general">General</string>
+    <string name="general">General</string>g
     <string name="specific">Project specific</string>
     <string name="easy">Easy</string>
     <string name="medium">Medium</string>
@@ -19,4 +19,106 @@
     <string name="skip">SKIP</string>
     <string name="got_it">GOT IT</string>
 
+    <string name="t0_0">What is Autosar?</string>
+    <string name="t0_1">Basic AUTOSAR Approach</string>
+    <string name="t0_2">Autosar Architecture</string>
+    <string name="t0_3">Microcontroller Abstraction Layer</string>
+    <string name="t0_4">ECU Abstraction Layer</string>
+    <string name="t0_5">Complex Driver</string>
+    <string name="t0_6">Services Layer</string>
+    <string name="t0_7">Run Time Environment (RTE)</string>
+    <string name="t0_8">Autosar Methodology</string>
+    <string name="t0_9"></string>
+    <string name="t1_0">Why is the focus on Automotives?</string>
+    <string name="t2_1">Standards before Autosar</string>
+
+    <string name="m0_0">Autosar is a software standard of implementing one or many functionalities in a system. This is specially designed for Automotive applications. This pursues the objective of creating and establishing an open and standardized software architecture for Automotive Electronic Control Units.
+AUTOSAR (Automotive Open System Architecture) is an open and standardized automotive software architecture, jointly developed by automobile manufacturers, suppliers and tool developers.
+The AUTOSAR standard consists of a set of specifications that describe a software architecture, application interfaces and a methodology.</string>
+    <string name="m0_1"></string>
+    <string name="m0_2">AUTOSAR architecture consists of the three different layers.\n
+•Application Layer\n
+•Runtime Environment\n
+•Basic Software Layer\n
+?Services layer\n
+?ECU Abstraction Layer\n
+?Complex Drivers\n
+?Microcontroller Abstraction layer\n
+The basic software layers are further divided into functional groups (below refer to Autosar R4.3).
+</string>
+    <string name="m0_3">Microcontroller Abstraction Layer contains internal drivers, which are software modules with direct access to the microcontroller and internal peripherals.
+Example: CAN, PORT, MCU, DIO
+</string>
+    <string name="m0_4">ECU Abstraction Layer offers an API for access to peripherals and devices regardless of their location (µC internal/external) and their connection to the µC (port pins, type of interface).Make higher software layers independent of ECU hardware layout.
+Example: Can Interface (CanIf), Eeprom Abstraction (EA)
+</string>
+    <string name="m0_5">A Complex Driver is a software entity not standardized by AUTOSAR that can access or be accessed via AUTOSAR Interfaces and/or Basic Software Modules APIs.
+The main goal of the CDD is to implement complex sensor evaluation and actuator control with direct access to the microcontroller.
+Example: Injection control, Electric valve control.
+</string>
+    <string name="m0_6">Services Layer provides basic services for applications and basic software modules.\n
+•	Operating system functionality\n
+•	Memory services (NVRAM management)\n
+•	Diagnostic Services\n
+•	ECU state management\n
+As per AUTOSAR revision 4.3, the BSW contains below set of modules.</string>
+    <string name="m0_7">RTE is a layer providing communication services to the application software (AUTOSAR Software Components and/or AUTOSAR Sensor/Actuator components).
+The AUTOSAR Software Components communicate with other components (inter and/or intra ECU) and/or services via the RTE.
+Make AUTOSAR Software Components independent from the mapping to a specific ECU.\n
+Rte Contract Phase\n
+A limited set of information about a component, principally the AUTOSAR interface de?nitions, are used to create an application header ?le for a component type. The application header ?le de?nes the “contract” between component and RTE.
+Example: Function Declarations
+Rte Generation Phase\n
+All relevant information about components, their deployment to ECUs and communication connections are used to generate the RTE and optionally the IOC con?guration. RTE generated for each ECU in the system.
+Example: Function Definitions\n
+Application Software
+Application software for AUTOSAR is separated in several Software Components (SW-C), which manage to serve a functionality by working together. Software Components are realized through normal C-functions.
+SWC Description\n
+Interface Descriptions: provides the details of\n
+        •	Does the software component communicate with other software components, Basic software modules or anything else?\n
+        •	Which data elements i.e. datatypes are transmitted?\n
+        •	Which type of communication approach is used?\n
+Atomic Software Component: provides the details of\n
+        •	Which ports does the software component contain?\n
+        •	Are these particular ports receiving or sending ports?\n
+        •	Is it possible to instantiate more than one instance of this software component?\n
+Internal Behaviour: provides the details of\n
+        •	How the runnable entities are activated?\n
+        •	Which runnable entity needs which port?\n
+        •	Does the runnable entity access an inter runnable variable or even an exclusive area?\n
+Compositions: provides the details of\n
+        •	Which software components belong together?\n
+        •	How do these software components interact with each other?\n
+        •	Which elements will be transmitted between them?\n
+Implementation: provides the details of\n
+        •	Where is the code that has to be executed?\n
+        •	Is the code precompiled or not?\n
+Configuration Classes\n
+Below are the three different AUTOSAR configuration classes.
+Pre-compile time\n
+        •	Preprocessor instructions\n
+        •	Code generation (selection or synthetization)\n
+Link time\n
+        •	Constant data outside the module; the data can be configured after the module has been compiled\n
+Post-build time\n
+        •	Loadable constant data outside the module. Very similar to Link time, but the data is located in a specific memory segment that allows reloading (e.g. reflashing in ECU production line).\n
+        •	Single or multiple configuration sets can be provided. In case that multiple configuration sets are provided, the actually used configuration set is to be specified at runtime.\n
+</string>
+    <string name="m0_8">System Configuration Description: Includes all system information and the information that must be agreed between different ECUs.
+System Configuration Extractor: Extracts the information from the System Configuration Description needed for a specific ECU\n
+ECU extract: The information from the System Configuration Description needed for a specific ECU\n
+ECU Configuration Description: All information that is local to a specific ECU the runnable software can be built from this information and the code of the software component.
+</string>
+    <string name="m1_0">In a modern car the typical number of lines of code is 100M and is still counting. Now one can imagine if a common standard is not setup, companies will be floating with their own standards.
+In such cases customers face high maintenance costs. Besides companies have to invest a lot in their Research and Development for producing something new all the times. Thus great decrease in the cost of automotive standards are noticed because of globally accepted Autosar standard.
+
+</string>
+    <string name="m2_0">HIS:    Hersteller initiative software (“OEM Software Initiative”)\n
+ASAM:    Association for Standardization of Automation and Measuring Systems.\n
+ISO:    International Organization for Standardization.\n
+OSEK:  A German abbreviation equivalent to “Open Systems and their interfaces for electronics in motor vehicle”.\n
+Companies maintained different engineers as per the above standards which is hard for the management to acquire and maintain the human resources.
+
+
+</string>
 </resources>

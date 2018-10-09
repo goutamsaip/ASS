@@ -24,7 +24,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     private LinearLayout dotsLayout;
     private TextView[] dots;
 
-    private int[] layouts = new int[]{R.layout.intro_slider_1, R.layout.intro_slider_2, R.layout.intro_slider_3, R.layout.intro_slider_4};
+    private int[] layouts = new int[]{R.layout.intro_slider_1, R.layout.intro_slider_2};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -60,6 +60,8 @@
             </LinearLayout>
 
             <ImageView
+                android:tag="+918008949939"
+                android:onClick="dial"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"
@@ -115,6 +117,8 @@
             </LinearLayout>
 
             <ImageView
+                android:tag="+918008949939"
+                android:onClick="dial"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"
@@ -170,6 +174,8 @@
             </LinearLayout>
 
             <ImageView
+                android:tag="+918008949939"
+                android:onClick="dial"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"
@@ -225,6 +231,8 @@
             </LinearLayout>
 
             <ImageView
+                android:tag="+918008949939"
+                android:onClick="dial"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"
@@ -280,6 +288,8 @@
             </LinearLayout>
 
             <ImageView
+                android:tag="+918008949939"
+                android:onClick="dial"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"
@@ -335,6 +345,8 @@
             </LinearLayout>
 
             <ImageView
+                android:tag="+918008949939"
+                android:onClick="dial"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"
@@ -390,6 +402,8 @@
             </LinearLayout>
 
             <ImageView
+                android:tag="+918008949939"
+                android:onClick="dial"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"

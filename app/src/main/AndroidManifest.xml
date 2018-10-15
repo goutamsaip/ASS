@@ -22,8 +22,8 @@
         <activity
             android:name=".MainActivity"
             android:label="ASLA"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
 
         <!-- Parts of Tutorials -->
         <activity
@@ -75,6 +75,10 @@
             android:label="Why AUTOSAR"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".displayContent"
+            android:label="Tutorial"
+            android:parentActivityName=".BeginnerTutorialActivity" />
+        <activity
             android:name=".Splash"
             android:theme="@style/splash">
             <intent-filter>
@@ -83,7 +87,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".FAQanswer"/>
+
     </application>
 
 </manifest>
